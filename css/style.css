@@ -65,11 +65,18 @@ body, html {
 }
 
 .ptext .border {
-    background-color: #111;
+    background-color: rgb(17, 17, 17);
     color: #fff;
     padding: 20px;
 }
 
 .ptext .border.trans {
     background-color: transparent;
+}
+
+/* Disable parallax effect on mobile */
+@media(max-width:568px){
+    .city1, .city2, .city3 {
+        background-attachment: scroll;
+    }
 }
